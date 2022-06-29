@@ -1,11 +1,7 @@
 ---
 title: "HW 03 - Road traffic accidents"
 output: 
-  tufte::tufte_html:
-    css: ../hw.css
-    tufte_variant: "envisioned"
-    highlight: pygments
-link-citations: yes
+  html_document
 ---
 
 ```{r include = FALSE}
@@ -69,11 +65,15 @@ You can also find this information [here](https://rstudio-education.github.io/ds
 
 1.  How many observations (rows) does the dataset have? Instead of hard coding the number in your answer, use inline code.
 
+The dataset has `r nrow(accidents)` rows
+
 ```{marginfigure}
 **Tired of typing your password?** Chances are your browser has already saved your password, but if not, you can ask Git to save (cache) your password for a period of time, where you indicate the period of time in seconds. For example, if you want it to cache your password for 1 hour, that would be 3,600 seconds. To do so, run the following *in the Console*: `usethis::use_git_config(credential.helper = "cache --timeout=3600")`. If you want to cache it for a longer time, you can adjust the number of seconds in the code.
 ```
 
 1.  Run `View(accidents)` in your Console to view the data in the data viewer. What does each row in the dataset represent?
+
+**Each row represents an accident**
 
 🧶 ✅ ⬆️ Knit, *commit, and push your changes to GitHub with an appropriate commit message. Make sure to commit and push all changed files so that your Git pane is cleared up afterwards.*
 
